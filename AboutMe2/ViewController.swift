@@ -10,15 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UIStackView!
-    
+
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.nameLabel.text = nil
+        self.hobbiesLabel.text = nil
     }
 
-
+    @IBAction func introduceSelfButtonTapped(_ sender: UIButton) {
+        self.nameLabel.text = "Sean"
+        self.hobbiesLabel.text = "Flying"
+    }
+    
 }
 
