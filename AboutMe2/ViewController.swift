@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UIStackView!
+    
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
